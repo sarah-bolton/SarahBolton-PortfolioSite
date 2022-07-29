@@ -265,7 +265,6 @@ body {
 }
 
 h1 {
-  font-family: "DM Serif Display", sans-serif;
   letter-spacing: 2px;
 }
 
@@ -281,6 +280,10 @@ body {
 
 h1 {
   font-size: 2.125rem;
+}
+
+h2 {
+  text-transform: uppercase;
 }
 
 ul {
@@ -303,6 +306,7 @@ button {
   padding: 15px 20px;
   font-family: "Montserrat";
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .headerHome {
@@ -326,7 +330,7 @@ button {
 }
 
 a {
-  color: white;
+  color: #2B2D2B;
   text-decoration: none;
 }
 
@@ -447,7 +451,7 @@ a:hover {
 }
 .headerTitle {
   margin-bottom: 0;
-  font-size: 45px;
+  font-size: 40px;
 }
 
 .headerSubTitle {
@@ -455,11 +459,14 @@ a:hover {
 }
 
 .titleContainer {
-  text-align: center;
   position: absolute;
-  top: 230px;
-  right: 225px;
+  top: 134px;
+  right: 462px;
   z-index: 10;
+}
+
+.aboutSection {
+  margin: 140px 0px;
 }
 
 .paintStroke {
@@ -467,4 +474,91 @@ a:hover {
   top: 175px;
   right: 78px;
   width: 500px;
+}
+
+.aboutMeTitle::before {
+  content: url(../assets/element1.png);
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutMe2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+}
+
+.aboutMe1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.recentWorkSection {
+  background-color: #D7CECC;
+  height: 85vh;
+  padding: 90px 0px;
+}
+
+.recentWorkH2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.recentWorkPreviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 30px;
+}
+.recentWorkPreviews a:hover img {
+  opacity: 1;
+  -webkit-animation: flash 2.5s;
+  animation: flash 2.5s;
+}
+@-webkit-keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.preview {
+  border: #C4BAB1 2px solid;
+  border-radius: 15px;
 }

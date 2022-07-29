@@ -1,6 +1,6 @@
 .headerTitle {
     margin-bottom: 0;
-    font-size: 45px;
+    font-size: 40px;
 }
 
 .headerSubTitle {
@@ -8,11 +8,14 @@
 }
 
 .titleContainer {
-    text-align: center;
     position: absolute;
-    top: 230px;
-    right: 225px;
+    top: 134px;
+    right: 462px;
     z-index: 10;
+}
+
+.aboutSection {
+    margin: 140px 0px;
 }
 
 .paintStroke {
@@ -20,4 +23,69 @@
     top: 175px;
     right: 78px;
     width: 500px;
+}
+
+.aboutMeTitle::before {
+    content: url(../assets/element1.png);
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.aboutContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutMe2 {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.aboutMe1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.recentWorkSection {
+    background-color: $beige;
+    height: 85vh;
+    padding: 90px 0px;
+}
+
+.recentWorkH2 {
+    display: flex;
+    justify-content: center;
+}
+
+.recentWorkPreviews {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+
+    a:hover {
+
+        img {
+            opacity: 1;
+            -webkit-animation: flash 2.5s;
+            animation: flash 2.5s;
+        }
+
+        @keyframes flash {
+            0% {
+                opacity: .4;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+    }
+}
+
+.preview {
+    border: $darkbeige 2px solid;
+    border-radius: 15px;
 }
