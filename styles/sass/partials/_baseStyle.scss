@@ -5,7 +5,7 @@
 }
 
 body {
-    color: white;
+    color: $black;
 }
 
 h1 {
@@ -22,4 +22,14 @@ h3 {
 
 img {
     max-width: 100%;
+}
+
+button {
+    background-color: $beige;
+    color: $black;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 20px;
+    font-family: $bodyFont;
+    cursor: pointer;
 }
