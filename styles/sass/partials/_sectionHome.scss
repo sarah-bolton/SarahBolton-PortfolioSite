@@ -38,7 +38,7 @@
 
 .aboutMe2 {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     width: 50%;
 }
 
@@ -50,8 +50,8 @@
 
 .recentWorkSection {
     background-color: $beige;
-    height: 85vh;
-    padding: 90px 0px;
+    height: 87%;
+    padding: 60px 0px;
 }
 
 .recentWorkH2 {
@@ -61,8 +61,7 @@
 
 .recentWorkPreviews {
     display: flex;
-    justify-content: space-evenly;
-    padding-top: 30px;
+    justify-content: center;
 
     a:hover {
 
@@ -86,6 +85,22 @@
 }
 
 .preview {
-    border: $darkbeige 2px solid;
-    border-radius: 15px;
+    border: $darkbeige 1px solid;
+    margin: 30px;
+}
+
+.rwbuttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.rwButton {
+    background-color: white;
+    border: $darkbeige 1px solid;
+    transition-duration: 0.4s;
+}
+
+.rwbuttonContainer .rwButton:hover {
+    background-color: $orange;
+    color: white;
 }

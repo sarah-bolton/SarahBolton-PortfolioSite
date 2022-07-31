@@ -268,9 +268,22 @@ h1 {
   letter-spacing: 2px;
 }
 
+html {
+  cursor: url(../assets/cursor.png), auto;
+}
+html a:hover {
+  cursor: url(../assets/cursor.png), auto;
+}
+html a:active {
+  cursor: url(../assets/cursor.png), auto;
+}
+html button:hover {
+  cursor: url(../assets/cursor.png), auto;
+}
+
 .wrapper {
   max-width: 1200px;
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -298,23 +311,31 @@ img {
   max-width: 100%;
 }
 
+p {
+  line-height: 25px;
+}
+
 button {
   background-color: #D7CECC;
   color: #2B2D2B;
   border: none;
-  border-radius: 12px;
+  border-radius: 5px;
   padding: 15px 20px;
   font-family: "Montserrat";
-  cursor: pointer;
   text-transform: uppercase;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #C39879;
+  color: white;
 }
 
 .headerHome {
   background-image: url("../assets/websitebkgd.jpg");
   height: 100vh;
   background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
 }
 
 .skip-link {
@@ -332,10 +353,6 @@ button {
 a {
   color: #2B2D2B;
   text-decoration: none;
-}
-
-a:hover {
-  cursor: pointer;
 }
 
 .navigationContainer {
@@ -358,6 +375,7 @@ a:hover {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
+  cursor: url(../assets/cursor.png), auto;
 }
 
 .logo {
@@ -495,9 +513,9 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
   width: 50%;
 }
 
@@ -514,8 +532,8 @@ a:hover {
 
 .recentWorkSection {
   background-color: #D7CECC;
-  height: 85vh;
-  padding: 90px 0px;
+  height: 87%;
+  padding: 60px 0px;
 }
 
 .recentWorkH2 {
@@ -531,10 +549,9 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-top: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .recentWorkPreviews a:hover img {
   opacity: 1;
@@ -559,6 +576,27 @@ a:hover {
 }
 
 .preview {
-  border: #C4BAB1 2px solid;
-  border-radius: 15px;
+  border: #C4BAB1 1px solid;
+  margin: 30px;
+}
+
+.rwbuttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rwButton {
+  background-color: white;
+  border: #C4BAB1 1px solid;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.rwbuttonContainer .rwButton:hover {
+  background-color: #C39879;
+  color: white;
 }

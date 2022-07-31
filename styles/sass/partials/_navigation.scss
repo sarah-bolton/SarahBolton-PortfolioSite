@@ -16,10 +16,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    cursor: pointer;
-}
-
 .navigationContainer {
     display: flex;
     justify-content: space-between;
@@ -32,6 +28,7 @@ a:hover {
     ul {
         display: flex;
         justify-content: right;
+        cursor: url(../assets/cursor.png), auto;
     }
 }
 

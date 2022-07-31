@@ -1,6 +1,23 @@
+html {
+    cursor: url(../assets/cursor.png), auto;
+
+    a:hover {
+        cursor: url(../assets/cursor.png), auto;
+        ;
+    }
+
+    a:active {
+        cursor: url(../assets/cursor.png), auto;
+    }
+
+    button:hover {
+        cursor: url(../assets/cursor.png), auto;
+    }
+}
+
 .wrapper {
     max-width: 1200px;
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -28,13 +45,22 @@ img {
     max-width: 100%;
 }
 
+p {
+    line-height: 25px;
+}
+
 button {
     background-color: $beige;
     color: $black;
     border: none;
-    border-radius: 12px;
+    border-radius: 5px;
     padding: 15px 20px;
     font-family: $bodyFont;
-    cursor: pointer;
     text-transform: uppercase;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: $orange;
+    color: white;
 }
