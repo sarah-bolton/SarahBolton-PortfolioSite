@@ -1,6 +1,6 @@
 .headerTitle {
     margin-bottom: 0;
-    font-size: 40px;
+    font-size: 45px;
 }
 
 .headerSubTitle {
@@ -8,21 +8,14 @@
 }
 
 .titleContainer {
-    position: absolute;
-    top: 134px;
-    right: 462px;
-    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
 }
 
 .aboutSection {
     margin: 140px 0px;
-}
-
-.paintStroke {
-    position: absolute;
-    top: 175px;
-    right: 78px;
-    width: 500px;
 }
 
 .aboutMeTitle::before {
@@ -49,9 +42,11 @@
 }
 
 .recentWorkSection {
-    background-color: $beige;
-    height: 87%;
-    padding: 60px 0px;
+    background-image: url(../../../assets/pexels-content-pixie-3554239.jpg);
+    background-position: 90% 30%;
+    background-size: cover;
+    height: 95vh;
+    padding: 65px 0px;
 }
 
 .recentWorkH2 {
@@ -62,31 +57,15 @@
 .recentWorkPreviews {
     display: flex;
     justify-content: center;
-
-    a:hover {
-
-        img {
-            opacity: 1;
-            -webkit-animation: flash 2.5s;
-            animation: flash 2.5s;
-        }
-
-        @keyframes flash {
-            0% {
-                opacity: .4;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-    }
 }
 
 .preview {
     border: $darkbeige 1px solid;
     margin: 30px;
+}
+
+.preview:hover {
+    opacity: 0.9;
 }
 
 .rwbuttonContainer {
@@ -95,8 +74,6 @@
 }
 
 .rwButton {
-    background-color: white;
-    border: $darkbeige 1px solid;
     transition-duration: 0.4s;
 }
 

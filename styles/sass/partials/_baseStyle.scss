@@ -1,19 +1,19 @@
-html {
-    cursor: url(../assets/cursor.png), auto;
+// html {
+//     cursor: url(../assets/cursor.png), auto;
 
-    a:hover {
-        cursor: url(../assets/cursor.png), auto;
-        ;
-    }
+//     a:hover {
+//         cursor: url(../assets/cursor.png), auto;
+//         ;
+//     }
 
-    a:active {
-        cursor: url(../assets/cursor.png), auto;
-    }
+//     a:active {
+//         cursor: url(../assets/cursor.png), auto;
+//     }
 
-    button:hover {
-        cursor: url(../assets/cursor.png), auto;
-    }
-}
+//     button:hover {
+//         cursor: url(../assets/cursor.png), auto;
+//     }
+// }
 
 .wrapper {
     max-width: 1200px;
@@ -26,7 +26,7 @@ body {
 }
 
 h1 {
-    font-size: 2.125rem;
+    font-size: 35px;
 }
 
 h2 {

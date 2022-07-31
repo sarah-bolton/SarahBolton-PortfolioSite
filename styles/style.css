@@ -268,19 +268,6 @@ h1 {
   letter-spacing: 2px;
 }
 
-html {
-  cursor: url(../assets/cursor.png), auto;
-}
-html a:hover {
-  cursor: url(../assets/cursor.png), auto;
-}
-html a:active {
-  cursor: url(../assets/cursor.png), auto;
-}
-html button:hover {
-  cursor: url(../assets/cursor.png), auto;
-}
-
 .wrapper {
   max-width: 1200px;
   width: 75%;
@@ -292,7 +279,7 @@ body {
 }
 
 h1 {
-  font-size: 2.125rem;
+  font-size: 35px;
 }
 
 h2 {
@@ -333,8 +320,9 @@ button:hover {
 }
 
 .headerHome {
-  background-image: url("../assets/websitebkgd.jpg");
+  background-image: url(../assets/pexels-karolina-grabowska-8092507.jpeg);
   height: 100vh;
+  background-position: bottom;
   background-size: cover;
 }
 
@@ -469,7 +457,7 @@ a {
 }
 .headerTitle {
   margin-bottom: 0;
-  font-size: 40px;
+  font-size: 45px;
 }
 
 .headerSubTitle {
@@ -477,21 +465,21 @@ a {
 }
 
 .titleContainer {
-  position: absolute;
-  top: 134px;
-  right: 462px;
-  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 80px;
 }
 
 .aboutSection {
   margin: 140px 0px;
-}
-
-.paintStroke {
-  position: absolute;
-  top: 175px;
-  right: 78px;
-  width: 500px;
 }
 
 .aboutMeTitle::before {
@@ -531,9 +519,11 @@ a {
 }
 
 .recentWorkSection {
-  background-color: #D7CECC;
-  height: 87%;
-  padding: 60px 0px;
+  background-image: url(../../../assets/pexels-content-pixie-3554239.jpg);
+  background-position: 90% 30%;
+  background-size: cover;
+  height: 95vh;
+  padding: 65px 0px;
 }
 
 .recentWorkH2 {
@@ -553,31 +543,14 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.recentWorkPreviews a:hover img {
-  opacity: 1;
-  -webkit-animation: flash 2.5s;
-  animation: flash 2.5s;
-}
-@-webkit-keyframes flash {
-  0% {
-    opacity: 0.4;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes flash {
-  0% {
-    opacity: 0.4;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 .preview {
   border: #C4BAB1 1px solid;
   margin: 30px;
+}
+
+.preview:hover {
+  opacity: 0.9;
 }
 
 .rwbuttonContainer {
@@ -590,8 +563,6 @@ a {
 }
 
 .rwButton {
-  background-color: white;
-  border: #C4BAB1 1px solid;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
 }
