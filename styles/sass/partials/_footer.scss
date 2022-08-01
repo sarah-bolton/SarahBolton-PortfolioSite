@@ -1,0 +1,46 @@
+footer {
+    background-color: $green;
+    height: 200px;
+}
+
+footer i {
+    color: white;
+    padding-right: 10px;
+}
+
+footer a {
+    color: white;
+}
+
+footer .navLeft {
+    padding: 0;
+}
+
+footer .mainNav {
+    display: flex;
+    justify-content: left;
+    padding: 65px 0 0;
+
+    li {
+        padding-right: 15px;
+    }
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: left;
+}
+
+.footerNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerLogo {
+    margin-top: 60px;
+
+    img {
+        width: 60px;
+        margin-top: 20px;
+    }
+}

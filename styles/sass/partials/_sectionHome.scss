@@ -46,22 +46,27 @@
     background-position: 90% 30%;
     background-size: cover;
     height: 95vh;
-    padding: 65px 0px;
+    padding: 70px 0px;
+}
+
+.wrapperRW {
+    width: 65%;
+    margin: 0 auto;
 }
 
 .recentWorkH2 {
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
 
 .recentWorkPreviews {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .preview {
     border: $darkbeige 1px solid;
-    margin: 30px;
+    margin: 25px 0;
 }
 
 .preview:hover {
@@ -70,14 +75,23 @@
 
 .rwbuttonContainer {
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
 
 .rwButton {
     transition-duration: 0.4s;
+    margin-top: 10px;
 }
 
 .rwbuttonContainer .rwButton:hover {
     background-color: $orange;
     color: white;
+}
+
+.indexContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 120px 0;
 }

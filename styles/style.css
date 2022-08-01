@@ -363,7 +363,6 @@ a {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
-  cursor: url(../assets/cursor.png), auto;
 }
 
 .logo {
@@ -377,6 +376,63 @@ a {
 }
 .navRight li {
   padding-left: 30px;
+}
+
+footer {
+  background-color: #5c7d68;
+  height: 200px;
+}
+
+footer i {
+  color: white;
+  padding-right: 10px;
+}
+
+footer a {
+  color: white;
+}
+
+footer .navLeft {
+  padding: 0;
+}
+
+footer .mainNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 65px 0 0;
+}
+footer .mainNav li {
+  padding-right: 15px;
+}
+
+.iconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.footerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footerLogo {
+  margin-top: 60px;
+}
+.footerLogo img {
+  width: 60px;
+  margin-top: 20px;
 }
 
 @media (min-width: 1050px) {
@@ -523,30 +579,35 @@ a {
   background-position: 90% 30%;
   background-size: cover;
   height: 95vh;
-  padding: 65px 0px;
+  padding: 70px 0px;
+}
+
+.wrapperRW {
+  width: 65%;
+  margin: 0 auto;
 }
 
 .recentWorkH2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 .recentWorkPreviews {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .preview {
   border: #C4BAB1 1px solid;
-  margin: 30px;
+  margin: 25px 0;
 }
 
 .preview:hover {
@@ -557,17 +618,35 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 .rwButton {
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
+  margin-top: 10px;
 }
 
 .rwbuttonContainer .rwButton:hover {
   background-color: #C39879;
   color: white;
+}
+
+.indexContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 120px 0;
 }
