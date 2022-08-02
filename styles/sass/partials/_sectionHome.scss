@@ -18,10 +18,10 @@
     margin: 140px 0px;
 }
 
-.aboutMeTitle::before {
+.aboutMeTitle::after {
     content: url(../assets/element1.png);
     display: inline-block;
-    padding-right: 10px;
+    padding-left: 15px;
 }
 
 .aboutContainer {
@@ -42,11 +42,11 @@
 }
 
 .recentWorkSection {
-    background-image: url(../../../assets/pexels-content-pixie-3554239.jpg);
-    background-position: 90% 30%;
-    background-size: cover;
-    height: 95vh;
-    padding: 70px 0px;
+    // background-image: url(../../../assets/pexels-content-pixie-3554239.jpg);
+    // background-position: 90% 30%;
+    // background-size: cover;
+    background-color: $beige;
+    padding: 30px 0 80px;
 }
 
 .wrapperRW {
@@ -54,9 +54,11 @@
     margin: 0 auto;
 }
 
-.recentWorkH2 {
-    display: flex;
-    justify-content: right;
+.recentWorkH2::before {
+    content: url(../../../assets/element1.png);
+    display: inline-block;
+    align-items: right;
+    padding-right: 15px;
 }
 
 .recentWorkPreviews {
@@ -79,19 +81,19 @@
 }
 
 .rwButton {
+    background-color: $orange;
     transition-duration: 0.4s;
-    margin-top: 10px;
+    margin-top: 20px 0;
+    color: $black;
 }
 
-.rwbuttonContainer .rwButton:hover {
-    background-color: $orange;
-    color: white;
+.rwButton:hover {
+    background-color: $black;
 }
 
 .indexContact {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin: 120px 0;
+    margin: 200px 0;
 }

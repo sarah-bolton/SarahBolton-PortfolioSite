@@ -2,7 +2,7 @@
 
 @media (min-width: 1050px) {
     .hamburgerMenu {
-        display: none;
+        // display: none;
         background-color: none;
     }
 
@@ -23,13 +23,13 @@
     .sideNav {
         height: 100%;
         width: 0;
-        position: fixed; 
-        z-index: 100; 
-        top: 0; 
+        position: fixed;
+        z-index: 100;
+        top: 0;
         left: -100%;
-        background-color: black; 
-        overflow-x: hidden; 
-        padding-top: 60px; 
+        background-color: black;
+        overflow-x: hidden;
+        padding-top: 60px;
         transition: 0.5s;
     }
 
@@ -38,7 +38,7 @@
         width: 250px;
         transition: 0.5s;
     }
-    
+
     .sideNav a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
@@ -48,11 +48,11 @@
         display: block;
         transition: 0.3s;
     }
-    
+
     .sideNav a:hover {
         color: blue;
     }
-    
+
     .sideNav .closeBtn {
         border: none;
         color: red;
@@ -65,7 +65,8 @@
         cursor: pointer;
     }
 
-    .navLeft, .navRight {
+    .navLeft,
+    .navRight {
         display: none;
     }
 

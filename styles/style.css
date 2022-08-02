@@ -379,7 +379,7 @@ a {
 }
 
 footer {
-  background-color: #5c7d68;
+  background-color: #2B2D2B;
   height: 200px;
 }
 
@@ -435,9 +435,21 @@ footer .mainNav li {
   margin-top: 20px;
 }
 
+.footer2 p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2B2D2B;
+  color: white;
+  font-size: 12px;
+  padding: 20px 0;
+}
+
 @media (min-width: 1050px) {
   .hamburgerMenu {
-    display: none;
     background-color: none;
   }
   .sideNav {
@@ -494,7 +506,8 @@ footer .mainNav li {
     margin-left: 50px;
     cursor: pointer;
   }
-  .navLeft, .navRight {
+  .navLeft,
+.navRight {
     display: none;
   }
   .mainNav {
@@ -538,10 +551,10 @@ footer .mainNav li {
   margin: 140px 0px;
 }
 
-.aboutMeTitle::before {
+.aboutMeTitle::after {
   content: url(../assets/element1.png);
   display: inline-block;
-  padding-right: 10px;
+  padding-left: 15px;
 }
 
 .aboutContainer {
@@ -575,11 +588,8 @@ footer .mainNav li {
 }
 
 .recentWorkSection {
-  background-image: url(../../../assets/pexels-content-pixie-3554239.jpg);
-  background-position: 90% 30%;
-  background-size: cover;
-  height: 95vh;
-  padding: 70px 0px;
+  background-color: #D7CECC;
+  padding: 30px 0 80px;
 }
 
 .wrapperRW {
@@ -587,13 +597,13 @@ footer .mainNav li {
   margin: 0 auto;
 }
 
-.recentWorkH2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+.recentWorkH2::before {
+  content: url(../../../assets/element1.png);
+  display: inline-block;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  padding-right: 15px;
 }
 
 .recentWorkPreviews {
@@ -624,14 +634,15 @@ footer .mainNav li {
 }
 
 .rwButton {
+  background-color: #C39879;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
-  margin-top: 10px;
+  margin-top: 20px 0;
+  color: #2B2D2B;
 }
 
-.rwbuttonContainer .rwButton:hover {
-  background-color: #C39879;
-  color: white;
+.rwButton:hover {
+  background-color: #2B2D2B;
 }
 
 .indexContact {
@@ -642,11 +653,8 @@ footer .mainNav li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 120px 0;
+  margin: 200px 0;
 }

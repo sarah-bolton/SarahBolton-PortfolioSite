@@ -1,5 +1,5 @@
 footer {
-    background-color: $green;
+    background-color: $black;
     height: 200px;
 }
 
@@ -43,4 +43,13 @@ footer .mainNav {
         width: 60px;
         margin-top: 20px;
     }
+}
+
+.footer2 p {
+    display: flex;
+    justify-content: center;
+    background-color: $black;
+    color: white;
+    font-size: 12px;
+    padding: 20px 0;
 }
