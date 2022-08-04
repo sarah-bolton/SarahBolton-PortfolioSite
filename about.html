@@ -16,33 +16,67 @@
 
 <body>
 
-    <footer>
+    <!-- skip link -->
+    <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+    <!-- HEADER / NAV -->
+    <header class="headerHome">
         <div class="wrapper">
-            <div class="footerNav">
-                <nav class="mainNav">
-                    <ul class="navLeft">
-                        <li class="home"><a href="./index.html">Home</a></li>
-                        <li class="blog"><a href="./about.html">About</a></li>
-                        <li class="portfolio"><a href="./portfolio.html">Portfolio</a></li>
-                        <li class="contact"><a href="./contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="footerLogo">
-                    <a href="./index.html"><img src="./assets/logo_website_white.png" alt="sarah's website logo"
-                            class="logo"></a>
-                </div>
-            </div>
-            <div class="iconContainer">
-                <a href="https://www.linkedin.com/in/sarahthedev"><i class="fa-brands fa-linkedin fa-lg"></i></a>
-                <a href="https://github.com/sarah-bolton"><i class="fa-brands fa-github fa-lg"></i></a>
-                <a href="https://www.instagram.com/sarahthermt/"><i class="fa-brands fa-instagram fa-lg"></i></a>
-            </div>
+            <nav class="navigationContainer">
+                <!-- slide out nav content -->
+                <button class="hamburgerMenu">&#9776;</button>
+                <ul id="mySideNav" class="sideNav">
+                    <button class="closeBtn">&times;</button>
+                    <li class="menuItem"><a href="./index.html">Home</a></li>
+                    <li class="menuItem"><a href="./about.html">About</a></li>
+                    <li class="menuItem"><a href="./portfolio.html">Portfolio</a></li>
+                    <li class="menuItem"><a href="./contact">Contact</a></li>
+                </ul>
+
+                <a href="./index.html">
+                    <img src="./assets/logo_website.png" alt="sarah's website logo" class="logo">
+                </a>
+            </nav>
+        </div>
+        <div class="titleContainer">
+            <h1 class="headerTitle">Sarah Bolton</h1>
+            <h2 class="headerSubTitle">Front-End Developer</h2>
         </div>
 
-        <div class="footer2">
-            <p>© Sarah Bolton 2022</p>
         </div>
-    </footer>
+    </header>
+
+    <main id="mainContent">
+
+        <footer>
+            <div class="wrapper">
+                <div class="footerNav">
+                    <nav class="mainNav">
+                        <ul class="navLeft">
+                            <li class="home"><a href="./index.html">Home</a></li>
+                            <li class="blog"><a href="./about.html">About</a></li>
+                            <li class="portfolio"><a href="./portfolio.html">Portfolio</a></li>
+                            <li class="contact"><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footerLogo">
+                        <a href="./index.html"><img src="./assets/logo_website_white.png" alt="sarah's website logo"
+                                class="logo"></a>
+                    </div>
+                </div>
+                <div class="iconContainer">
+                    <a href="https://www.linkedin.com/in/sarahthedev"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                    <a href="https://github.com/sarah-bolton"><i class="fa-brands fa-github fa-lg"></i></a>
+                    <a href="https://www.instagram.com/sarahthermt/"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                </div>
+            </div>
+
+            <div class="footer2">
+                <p>© Sarah Bolton 2022</p>
+            </div>
+        </footer>
+
+        <script src="./script.js"></script>
 </body>
 
 </html>

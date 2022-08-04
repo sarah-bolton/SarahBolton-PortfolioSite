@@ -344,6 +344,17 @@ a {
   text-decoration: none;
 }
 
+.hamburgerMenu {
+  background-color: transparent;
+  font-size: 25px;
+  padding: 0;
+}
+
+.hamburgerMenu:hover {
+  background-color: transparent;
+  color: #4d6d58;
+}
+
 .navigationContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -354,29 +365,21 @@ a {
   padding-top: 30px;
 }
 
-.mainNav {
+.sideNav {
   text-transform: uppercase;
 }
-.mainNav ul {
+.sideNav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .logo {
-  width: 80px;
-}
-
-.navRight {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.navRight li {
-  padding-left: 30px;
+  width: 70px;
 }
 
 footer {
@@ -395,6 +398,9 @@ footer a {
 
 footer .navLeft {
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 footer .mainNav {
@@ -451,14 +457,6 @@ footer .mainNav li {
 
 @media (min-width: 1050px) {
   .hamburgerMenu {
-    background-color: none;
-  }
-  .sideNav {
-    display: none;
-  }
-}
-@media (max-width: 1050px) {
-  .hamburgerMenu {
     display: block;
     margin-right: 20px;
     border: none;
@@ -471,53 +469,45 @@ footer .mainNav li {
     z-index: 100;
     top: 0;
     left: -100%;
-    background-color: black;
+    background-color: #D7CECC;
     overflow-x: hidden;
-    padding-top: 60px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    border: 1px solid #C4BAB1;
+    padding: 90px 0;
+    text-align: center;
   }
   .sideNav.active {
     left: 0;
-    width: 250px;
+    width: 300px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
   .sideNav a {
-    padding: 8px 8px 8px 32px;
+    padding: 20px;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 16px;
     text-transform: uppercase;
-    color: grey;
+    color: #2B2D2B;
     display: block;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-bottom: 1px solid #C4BAB1;
   }
   .sideNav a:hover {
-    color: blue;
+    font-family: "Libre Bodoni";
   }
   .sideNav .closeBtn {
     border: none;
-    color: red;
-    background-color: black;
+    color: #2B2D2B;
+    background-color: #D7CECC;
     position: absolute;
-    top: 10px;
-    right: 25px;
+    top: 2px;
+    right: 10px;
     font-size: 40px;
-    margin-left: 50px;
-    cursor: pointer;
   }
-  .navLeft,
-.navRight {
-    display: none;
-  }
-  .mainNav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .closeBtn:hover {
+    color: #4d6d58;
   }
   .logo {
     display: -webkit-box;

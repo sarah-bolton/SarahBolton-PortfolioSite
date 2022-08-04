@@ -16,30 +16,42 @@ a {
     text-decoration: none;
 }
 
+.hamburgerMenu {
+    background-color: transparent;
+    font-size: 25px;
+    padding: 0;
+}
+
+.hamburgerMenu:hover {
+    background-color: transparent;
+    color: $green;
+}
+
 .navigationContainer {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
 }
 
-.mainNav {
+.sideNav {
     text-transform: uppercase;
 
     ul {
         display: flex;
-        justify-content: right;
+        flex-direction: column;
+        // justify-content: right;
     }
 }
 
 .logo {
-    width: 80px;
+    width: 70px;
 }
 
 
-.navRight {
-    display: flex;
+// .navRight {
+//     display: flex;
 
-    li {
-        padding-left: 30px;
-    }
-}
+//     li {
+//         padding-left: 30px;
+//     }
+// }
