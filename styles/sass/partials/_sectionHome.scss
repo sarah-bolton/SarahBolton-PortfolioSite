@@ -5,23 +5,25 @@
 
 .headerSubTitle {
     margin-top: 10px;
+    font-size: 20px;
 }
 
 .titleContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 63px;
 }
 
 .aboutSection {
-    margin: 140px 0px;
+    margin: 80px 0px;
 }
 
 .aboutMeTitle::after {
     content: url(../assets/element1.png);
     display: inline-block;
     padding-left: 15px;
+    margin-top: 57px;
 }
 
 .aboutContainer {
@@ -42,11 +44,8 @@
 }
 
 .recentWorkSection {
-    // background-image: url(../../../assets/pexels-content-pixie-3554239.jpg);
-    // background-position: 90% 30%;
-    // background-size: cover;
     background-color: $beige;
-    padding: 30px 0 80px;
+    padding: 40px 0 90px;
 }
 
 .wrapperRW {
@@ -91,9 +90,15 @@
     background-color: $black;
 }
 
+.contactIntroSection {
+    background-image: url('../../../assets/pexels-karolina-grabowska-4207779.jpeg');
+    height: 95vh;
+    background-position: bottom;
+    background-size: cover;
+}
+
 .indexContact {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
-    align-items: center;
-    margin: 200px 0;
+    margin-top: 240px;
 }
