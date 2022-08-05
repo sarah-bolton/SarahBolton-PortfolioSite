@@ -683,3 +683,46 @@ footer .mainNav li {
 .h2IntroContact {
   margin-left: 65px;
 }
+
+.formSection {
+  height: 80vh;
+}
+
+.formH2 {
+  text-align: center;
+  border-bottom: 1px #e0e1e3 solid;
+  padding-bottom: 10px;
+  width: 50%;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form button {
+  width: 10%;
+  margin-top: 20px;
+}
+
+input {
+  border: 1px solid #2B2D2B;
+  width: 50%;
+  margin-top: 10px;
+}
+
+textarea {
+  border: 1px solid #2B2D2B;
+  width: 50%;
+  margin-top: 10px;
+  resize: none;
+}
+
+label {
+  margin-top: 30px;
+}
