@@ -19,13 +19,17 @@
     <a href="#mainContent" class="skip-link">Skip to main content</a>
 
     <!-- HEADER / NAV -->
-    <header class="headerHome">
+    <header class="headerContact">
         <div class="wrapper">
             <nav class="navigationContainer">
                 <!-- slide out nav content -->
-                <button class="hamburgerMenu">&#9776;</button>
+                <button class="hamburgerMenu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
                 <ul id="mySideNav" class="sideNav">
-                    <button class="closeBtn">&times;</button>
+                    <button class="closeBtn">
+                        <i class="fa-solid fa-xmark fa-2xs"></i>
+                    </button>
                     <li class="menuItem"><a href="./index.html">Home</a></li>
                     <li class="menuItem"><a href="./about.html">About</a></li>
                     <li class="menuItem"><a href="./portfolio.html">Portfolio</a></li>
@@ -37,15 +41,30 @@
                 </a>
             </nav>
         </div>
-        <div class="titleContainer">
-            <h1 class="headerTitle">Sarah Bolton</h1>
-            <h2 class="headerSubTitle">Front-End Developer</h2>
-        </div>
-
-        </div>
     </header>
 
     <main id="mainContent">
+
+        <form action="https://formspree.io/f/xwkzeyvv" method="POST">
+            <label>
+                Name:
+                <input type="text" name="name">
+            </label>
+            <label>
+                Email:
+                <input type="email" name="email">
+            </label>
+            <label>
+                Subject:
+                <input type="text" name="subject">
+            </label>
+            <label>
+                Message:
+                <textarea name="message"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+        </form>
 
         <footer>
             <div class="wrapper">

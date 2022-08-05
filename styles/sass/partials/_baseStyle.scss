@@ -32,6 +32,7 @@ h1 {
 
 h2 {
     text-transform: uppercase;
+    font-family: $headingFont;
 }
 
 ul {
@@ -51,17 +52,17 @@ p {
 }
 
 button {
-    background-color: $beige;
-    color: $black;
-    border: none;
-    border-radius: 5px;
-    padding: 15px 20px;
+    background-color: $blush;
+    font-size: 15px;
+    color: white;
+    border: 1px solid $darkbeige;
+    padding: 10px 15px;
     font-family: $bodyFont;
     text-transform: uppercase;
     transition-duration: 0.4s;
 }
 
 button:hover {
-    background-color: $orange;
+    background-color: $black;
     color: white;
 }

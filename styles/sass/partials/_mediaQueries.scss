@@ -25,7 +25,7 @@
         left: -100%;
         background-color: $beige;
         overflow-x: hidden;
-        transition: 0.5s;
+        transition: 0.7s;
         border: 1px solid $darkbeige;
         padding: 90px 0;
         text-align: center;
@@ -34,7 +34,7 @@
     .sideNav.active {
         left: 0;
         width: 300px;
-        transition: 0.5s;
+        transition: 0.6s;
     }
 
     .sideNav a {
@@ -44,7 +44,7 @@
         text-transform: uppercase;
         color: $black;
         display: block;
-        transition: 0.4s;
+        transition: 0.6s;
         border-bottom: 1px solid $darkbeige;
     }
 
@@ -63,7 +63,7 @@
     }
 
     .closeBtn:hover {
-        color: $green;
+        color: $blush;
     }
 
     // .navLeft,

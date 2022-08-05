@@ -18,13 +18,14 @@ a {
 
 .hamburgerMenu {
     background-color: transparent;
-    font-size: 25px;
+    color: $black;
+    font-size: 23px;
     padding: 0;
 }
 
 .hamburgerMenu:hover {
     background-color: transparent;
-    color: $green;
+    color: $blush;
 }
 
 .navigationContainer {
@@ -45,6 +46,14 @@ a {
 
 .logo {
     width: 70px;
+}
+
+.closeBtn i {
+    color: $black;
+}
+
+.closeBtn i:hover {
+    color: $blush;
 }
 
 
