@@ -328,10 +328,6 @@ button:hover {
   background-size: cover;
 }
 
-.headerAbout {
-  height: 20vh;
-}
-
 .headerContact {
   height: 20vh;
 }
@@ -684,15 +680,30 @@ footer .mainNav li {
   margin-left: 65px;
 }
 
-.formSection {
+.formContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url("../../../assets/pexels-karolina-grabowska-7291988.jpeg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
   height: 80vh;
+  margin-bottom: 20vh;
+}
+
+.formSection {
+  height: 100vh;
+  width: 50%;
 }
 
 .formH2 {
-  text-align: center;
   border-bottom: 1px #e0e1e3 solid;
   padding-bottom: 10px;
-  width: 50%;
+  width: 90%;
 }
 
 form {
@@ -705,24 +716,86 @@ form {
           flex-direction: column;
 }
 
-form button {
-  width: 10%;
+.formBtn {
+  width: 15%;
   margin-top: 20px;
+  text-align: center;
 }
 
 input {
   border: 1px solid #2B2D2B;
-  width: 50%;
+  width: 90%;
   margin-top: 10px;
+  padding: 6px 0;
 }
 
 textarea {
   border: 1px solid #2B2D2B;
-  width: 50%;
+  width: 90%;
   margin-top: 10px;
   resize: none;
+  padding: 10px 0;
 }
 
 label {
   margin-top: 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.aboutSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 140px;
+}
+
+.aboutContent {
+  width: 50%;
+}
+
+.aboutH1 {
+  position: relative;
+  top: 90px;
+  left: -70px;
+  font-size: 45px;
+}
+
+.aboutMeP {
+  margin-top: 115px;
+}
+
+.skillLists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-bottom: 1px solid #e0e1e3;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.skills1, .skills2, .skills3, .skills4 {
+  padding-left: 0;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.skillsH2 {
+  text-align: center;
+  border-bottom: 1px solid #e0e1e3;
+  padding-bottom: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.aboutImg2 {
+  margin: 150px 0 80px;
 }

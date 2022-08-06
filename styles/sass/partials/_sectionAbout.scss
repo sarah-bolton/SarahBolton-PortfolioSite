@@ -1,0 +1,48 @@
+.aboutSection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 140px;
+}
+
+.aboutContent {
+    width: 50%;
+}
+
+.aboutH1 {
+    position: relative;
+    top: 90px;
+    left: -70px;
+    font-size: 45px;
+}
+
+.aboutMeP {
+    margin-top: 115px;
+}
+
+.skillLists {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid $lightgrey;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.skills1, .skills2, .skills3, .skills4 {
+    padding-left: 0;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.skillsH2 {
+    text-align: center;
+    border-bottom: 1px solid $lightgrey;
+    padding-bottom: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.aboutImg2 {
+    margin: 150px 0 80px;
+}
