@@ -26,14 +26,20 @@
     display: inline-block;
     // padding-left: 15px;
     // margin-top: 57px;
-    border-bottom: 1px $lightgrey solid;
-    width: 130%;
-    z-index: 100;
+    // border-bottom: 1px $lightgrey solid;
+    // width: 130%;
+    // z-index: 100;
 }
 
 .aboutContainer {
     display: flex;
     justify-content: space-between;
+}
+
+.aboutMe1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
 .aboutMe2 {
@@ -42,10 +48,12 @@
     width: 50%;
 }
 
-.aboutMe1 {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+.aboutMeHome {
+    margin: 0;
+}
+
+.aboutButton {
+    margin-top: 10px;
 }
 
 .recentWorkSection {
@@ -62,6 +70,7 @@
 .recentWorkH2 {
     display: inline-block;
     text-align: center;
+    padding-bottom: 10px;
     padding-right: 15px;
     border-bottom: 1px $lightgrey solid;
     width: 100%;
@@ -107,9 +116,4 @@
     margin-top: 240px;
     border-top: 1px solid $beige;
     width: 75%;
-}
-
-.contactIntro,
-.h2IntroContact {
-    margin-left: 65px;
 }

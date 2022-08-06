@@ -569,9 +569,6 @@ footer .mainNav li {
 
 .aboutMeTitle {
   display: inline-block;
-  border-bottom: 1px #e0e1e3 solid;
-  width: 130%;
-  z-index: 100;
 }
 
 .aboutContainer {
@@ -581,6 +578,17 @@ footer .mainNav li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.aboutMe1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
 }
 
 .aboutMe2 {
@@ -593,15 +601,12 @@ footer .mainNav li {
   width: 50%;
 }
 
-.aboutMe1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 50%;
+.aboutMeHome {
+  margin: 0;
+}
+
+.aboutButton {
+  margin-top: 10px;
 }
 
 .recentWorkSection {
@@ -617,6 +622,7 @@ footer .mainNav li {
 .recentWorkH2 {
   display: inline-block;
   text-align: center;
+  padding-bottom: 10px;
   padding-right: 15px;
   border-bottom: 1px #e0e1e3 solid;
   width: 100%;
@@ -673,11 +679,6 @@ footer .mainNav li {
   margin-top: 240px;
   border-top: 1px solid #D7CECC;
   width: 75%;
-}
-
-.contactIntro,
-.h2IntroContact {
-  margin-left: 65px;
 }
 
 .formContainer {
