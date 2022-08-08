@@ -727,7 +727,6 @@ footer .mainNav li {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 240px;
-  border-top: 1px solid #D7CECC;
   width: 75%;
 }
 
