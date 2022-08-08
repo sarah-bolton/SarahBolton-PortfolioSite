@@ -332,10 +332,6 @@ button:hover {
   height: 20vh;
 }
 
-.headerPortfolio {
-  height: 20vh;
-}
-
 .skip-link {
   position: absolute;
   left: -1000px;
@@ -561,8 +557,35 @@ footer .mainNav li {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 105px;
+  -webkit-animation: slide-down 2s forwards;
+          animation: slide-down 2s forwards;
 }
 
+@-webkit-keyframes slide-down {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
 .aboutSection {
   margin: 80px 0px;
 }
@@ -599,8 +622,35 @@ footer .mainNav li {
       -ms-flex-pack: right;
           justify-content: right;
   width: 50%;
+  -webkit-animation: slide-left 4s forwards;
+          animation: slide-left 4s forwards;
 }
 
+@-webkit-keyframes slide-left {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(300px);
+            transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(300px);
+            transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
 .aboutMeHome {
   margin: 0;
 }
@@ -699,8 +749,22 @@ footer .mainNav li {
 .formSection {
   height: 100vh;
   width: 50%;
+  -webkit-animation: slide-down 1s forwards;
+          animation: slide-down 1s forwards;
 }
 
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
 .formH2 {
   border-bottom: 1px #e0e1e3 solid;
   padding-bottom: 10px;
@@ -799,4 +863,39 @@ label {
 
 .aboutImg2 {
   margin: 150px 0 80px;
+}
+
+.row1Projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 50px 0 90px;
+}
+
+.projectContainer1,
+.projectContainer2 {
+  width: 50%;
+  padding: 0 40px 0;
+}
+
+.portfolioH1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.portfolioIntroP {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.live:hover {
+  color: #b76760;
+}
+
+.github:hover {
+  color: #b76760;
 }

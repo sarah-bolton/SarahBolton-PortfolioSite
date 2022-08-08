@@ -12,6 +12,19 @@
 .formSection {
     height: 100vh;
     width: 50%;
+    animation: slide-down 1s forwards;
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 // .contactImgContainer {

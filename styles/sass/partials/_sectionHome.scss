@@ -15,6 +15,19 @@
     flex-direction: column;
     align-items: center;
     margin-top: 105px;
+    animation: slide-down 2s forwards;
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 .aboutSection {
@@ -22,13 +35,7 @@
 }
 
 .aboutMeTitle {
-    // content: url(../assets/element1.png);
     display: inline-block;
-    // padding-left: 15px;
-    // margin-top: 57px;
-    // border-bottom: 1px $lightgrey solid;
-    // width: 130%;
-    // z-index: 100;
 }
 
 .aboutContainer {
@@ -46,7 +53,21 @@
     display: flex;
     justify-content: right;
     width: 50%;
+    animation: slide-left 4s forwards;
 }
+
+@keyframes slide-left {
+    from {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
 
 .aboutMeHome {
     margin: 0;
