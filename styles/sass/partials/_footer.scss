@@ -20,8 +20,9 @@ footer .navLeft {
 
 footer .mainNav {
     display: flex;
+    flex-direction: column;
     justify-content: left;
-    padding: 80px 0 0;
+    padding: 50px 0 0;
 
     li {
         padding-right: 15px;
@@ -36,17 +37,13 @@ footer .mainNav {
 .footerNav {
     display: flex;
     justify-content: space-between;
-    font-size: 12px;
+    font-size: 16px;
     text-transform: uppercase;
 }
 
-.footerLogo {
-    margin-top: 60px;
-
-    img {
-        width: 60px;
-        margin-top: 20px;
-    }
+.footerLogo img {
+    width: 60px;
+    margin-top: 50px;
 }
 
 .footer2 p {
@@ -54,7 +51,7 @@ footer .mainNav {
     justify-content: center;
     background-color: $black;
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     padding: 30px 0;
     margin: 0;
 }

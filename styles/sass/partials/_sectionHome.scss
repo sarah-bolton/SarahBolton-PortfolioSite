@@ -36,6 +36,9 @@
 
 .aboutMeTitle {
     display: inline-block;
+    text-transform: none;
+    font-size: 30px;
+    margin: 0;
 }
 
 .aboutContainer {
@@ -44,15 +47,26 @@
 }
 
 .aboutMe1 {
+    position: relative;
+    top: 65px;
+    left: 100px;
+    border: 1px solid $black;
+    background-color: white;
+    padding: 40px;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    text-align: right;
+    width: 40%;
+    height: 50%;
+    z-index: 10;
 }
 
 .aboutMe2 {
+    position: relative;
+    right: 70px;
     display: flex;
     justify-content: right;
-    width: 50%;
+    width: 60%;
     animation: slide-left 4s forwards;
 }
 
@@ -68,73 +82,20 @@
     }
 }
 
-
-.aboutMeHome {
-    margin: 0;
+.wrapperIndex {
+    width: 70%;
+    margin: 0 auto;
 }
 
 .aboutButton {
     margin-top: 10px;
 }
 
-.recentWorkSection {
-    background-image: url('../../../assets/pexels-karolina-grabowska-8092309.jpeg');
-    // background-color: $lightgrey;
-    padding: 20px 0 90px;
-}
-
-.wrapperRW {
-    width: 65%;
-    margin: 0 auto;
-}
-
-.recentWorkH2 {
-    display: inline-block;
-    text-align: center;
-    padding-bottom: 10px;
-    padding-right: 15px;
-    border-bottom: 1px $lightgrey solid;
-    width: 100%;
-}
-
-.recentWorkPreviews {
-    display: flex;
-    justify-content: space-between;
-}
-
-.preview {
-    border: $lightgrey 1px solid;
-    margin: 25px 0;
-}
-
-.preview:hover {
-    opacity: 0.9;
-}
-
-.rwbuttonContainer {
+.iconContainerIndex {
     display: flex;
     justify-content: right;
-}
 
-.rwButton {
-    margin-top: 20px 0;
-}
-
-.rwButton:hover {
-    background-color: $black;
-}
-
-.contactIntroSection {
-    background-image: url('../../../assets/pexels-karolina-grabowska-7291997.jpeg');
-    height: 90vh;
-    background-position: top;
-    background-size: cover;
-}
-
-.indexContact {
-    display: inline-block;
-    flex-direction: column;
-    margin-top: 240px;
-    // border-top: 1px solid $beige;
-    width: 75%;
+    i {
+        padding-left: 10px;
+    }
 }

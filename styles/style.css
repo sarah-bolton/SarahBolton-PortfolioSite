@@ -301,12 +301,18 @@ img {
 }
 
 p {
-  line-height: 25px;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+a:hover {
+  color: #b76760;
 }
 
 button {
   background-color: #b76760;
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: bold;
   color: white;
   border: 1px solid #C4BAB1;
   padding: 10px 15px;
@@ -322,14 +328,17 @@ button:hover {
 }
 
 .headerHome {
-  background-image: url("../../../assets/pexels-karolina-grabowska-pinklaptop.png");
+  background-image: url("../../../assets/pexels-karolina-grabowska-pinklaptop.jpg");
   height: 100vh;
   background-position: 60% 50%;
   background-size: cover;
 }
 
 .headerContact {
-  height: 20vh;
+  background-image: url("../../../assets/pexels-karolina-grabowska-7291997.jpeg");
+  height: 120vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .skip-link {
@@ -350,15 +359,68 @@ a {
 }
 
 .hamburgerMenu {
+  display: block;
+  margin-right: 20px;
+  border: none;
   background-color: transparent;
   color: #2B2D2B;
   font-size: 23px;
   padding: 0;
 }
 
+.sideNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: -100%;
+  background-color: #D7CECC;
+  overflow-x: hidden;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  border: 1px solid #C4BAB1;
+  padding: 90px 0;
+  text-align: center;
+}
+
+.sideNav.active {
+  left: 0;
+  width: 300px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.sideNav a {
+  padding: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #2B2D2B;
+  display: block;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  border-bottom: 1px solid #C4BAB1;
+}
+
+.sideNav a:hover {
+  font-family: "Libre Bodoni";
+}
+
+.sideNav .closeBtn {
+  border: none;
+  color: #2B2D2B;
+  background-color: #D7CECC;
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  font-size: 40px;
+}
+
 .hamburgerMenu:hover {
   background-color: transparent;
   color: #b76760;
+  cursor: pointer;
 }
 
 .navigationContainer {
@@ -373,6 +435,7 @@ a {
 
 .sideNav {
   text-transform: uppercase;
+  margin-top: 0;
 }
 .sideNav ul {
   display: -webkit-box;
@@ -385,7 +448,7 @@ a {
 }
 
 .logo {
-  width: 70px;
+  width: 60px;
 }
 
 .closeBtn i {
@@ -394,6 +457,7 @@ a {
 
 .closeBtn i:hover {
   color: #b76760;
+  cursor: pointer;
 }
 
 footer {
@@ -422,10 +486,14 @@ footer .mainNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  padding: 80px 0 0;
+  padding: 50px 0 0;
 }
 footer .mainNav li {
   padding-right: 15px;
@@ -447,16 +515,13 @@ footer .mainNav li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 12px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
-.footerLogo {
-  margin-top: 60px;
-}
 .footerLogo img {
   width: 60px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .footer2 p {
@@ -468,71 +533,11 @@ footer .mainNav li {
           justify-content: center;
   background-color: #2B2D2B;
   color: white;
-  font-size: 12px;
+  font-size: 14px;
   padding: 30px 0;
   margin: 0;
 }
 
-@media (min-width: 1050px) {
-  .hamburgerMenu {
-    display: block;
-    margin-right: 20px;
-    border: none;
-    background-color: transparent;
-  }
-  .sideNav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    left: -100%;
-    background-color: #D7CECC;
-    overflow-x: hidden;
-    -webkit-transition: 0.7s;
-    transition: 0.7s;
-    border: 1px solid #C4BAB1;
-    padding: 90px 0;
-    text-align: center;
-  }
-  .sideNav.active {
-    left: 0;
-    width: 300px;
-    -webkit-transition: 0.6s;
-    transition: 0.6s;
-  }
-  .sideNav a {
-    padding: 20px;
-    text-decoration: none;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #2B2D2B;
-    display: block;
-    -webkit-transition: 0.6s;
-    transition: 0.6s;
-    border-bottom: 1px solid #C4BAB1;
-  }
-  .sideNav a:hover {
-    font-family: "Libre Bodoni";
-  }
-  .sideNav .closeBtn {
-    border: none;
-    color: #2B2D2B;
-    background-color: #D7CECC;
-    position: absolute;
-    top: 2px;
-    right: 10px;
-    font-size: 40px;
-  }
-  .closeBtn:hover {
-    color: #b76760;
-  }
-  .logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
 .headerTitle {
   margin-bottom: 0;
   font-size: 45px;
@@ -592,6 +597,9 @@ footer .mainNav li {
 
 .aboutMeTitle {
   display: inline-block;
+  text-transform: none;
+  font-size: 30px;
+  margin: 0;
 }
 
 .aboutContainer {
@@ -604,6 +612,12 @@ footer .mainNav li {
 }
 
 .aboutMe1 {
+  position: relative;
+  top: 65px;
+  left: 100px;
+  border: 1px solid #2B2D2B;
+  background-color: white;
+  padding: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -611,17 +625,22 @@ footer .mainNav li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+  text-align: right;
+  width: 40%;
+  height: 50%;
+  z-index: 10;
 }
 
 .aboutMe2 {
+  position: relative;
+  right: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
-  width: 50%;
+  width: 60%;
   -webkit-animation: slide-left 4s forwards;
           animation: slide-left 4s forwards;
 }
@@ -651,52 +670,16 @@ footer .mainNav li {
             transform: none;
   }
 }
-.aboutMeHome {
-  margin: 0;
+.wrapperIndex {
+  width: 70%;
+  margin: 0 auto;
 }
 
 .aboutButton {
   margin-top: 10px;
 }
 
-.recentWorkSection {
-  background-image: url("../../../assets/pexels-karolina-grabowska-8092309.jpeg");
-  padding: 20px 0 90px;
-}
-
-.wrapperRW {
-  width: 65%;
-  margin: 0 auto;
-}
-
-.recentWorkH2 {
-  display: inline-block;
-  text-align: center;
-  padding-bottom: 10px;
-  padding-right: 15px;
-  border-bottom: 1px #e0e1e3 solid;
-  width: 100%;
-}
-
-.recentWorkPreviews {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.preview {
-  border: #e0e1e3 1px solid;
-  margin: 25px 0;
-}
-
-.preview:hover {
-  opacity: 0.9;
-}
-
-.rwbuttonContainer {
+.iconContainerIndex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -704,45 +687,8 @@ footer .mainNav li {
       -ms-flex-pack: right;
           justify-content: right;
 }
-
-.rwButton {
-  margin-top: 20px 0;
-}
-
-.rwButton:hover {
-  background-color: #2B2D2B;
-}
-
-.contactIntroSection {
-  background-image: url("../../../assets/pexels-karolina-grabowska-7291997.jpeg");
-  height: 90vh;
-  background-position: top;
-  background-size: cover;
-}
-
-.indexContact {
-  display: inline-block;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 240px;
-  width: 75%;
-}
-
-.formContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-image: url("../../../assets/pexels-karolina-grabowska-7291988.jpeg");
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 80vh;
-  margin-bottom: 20vh;
+.iconContainerIndex i {
+  padding-left: 10px;
 }
 
 .formSection {
@@ -768,6 +714,7 @@ footer .mainNav li {
   border-bottom: 1px #e0e1e3 solid;
   padding-bottom: 10px;
   width: 90%;
+  margin-top: 70px;
 }
 
 form {
@@ -796,6 +743,7 @@ input {
 textarea {
   border: 1px solid #2B2D2B;
   width: 90%;
+  height: 90px;
   margin-top: 10px;
   resize: none;
   padding: 10px 0;
@@ -839,7 +787,6 @@ label {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  border-bottom: 1px solid #e0e1e3;
   width: 80%;
   margin: 0 auto;
 }
@@ -854,7 +801,6 @@ label {
 
 .skillsH2 {
   text-align: center;
-  border-bottom: 1px solid #e0e1e3;
   padding-bottom: 10px;
   width: 80%;
   margin: 0 auto;

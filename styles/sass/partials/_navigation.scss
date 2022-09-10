@@ -17,15 +17,65 @@ a {
 }
 
 .hamburgerMenu {
+    display: block;
+    margin-right: 20px;
+    border: none;
     background-color: transparent;
     color: $black;
     font-size: 23px;
     padding: 0;
 }
 
+.sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: -100%;
+    background-color: $beige;
+    overflow-x: hidden;
+    transition: 0.7s;
+    border: 1px solid $darkbeige;
+    padding: 90px 0;
+    text-align: center;
+}
+
+.sideNav.active {
+    left: 0;
+    width: 300px;
+    transition: 0.6s;
+}
+
+.sideNav a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $black;
+    display: block;
+    transition: 0.6s;
+    border-bottom: 1px solid $darkbeige;
+}
+
+.sideNav a:hover {
+    font-family: $headingFont;
+}
+
+.sideNav .closeBtn {
+    border: none;
+    color: $black;
+    background-color: $beige;
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 40px;
+}
+
 .hamburgerMenu:hover {
     background-color: transparent;
     color: $blush;
+    cursor: pointer;
 }
 
 .navigationContainer {
@@ -36,16 +86,16 @@ a {
 
 .sideNav {
     text-transform: uppercase;
+    margin-top: 0;
 
     ul {
         display: flex;
         flex-direction: column;
-        // justify-content: right;
     }
 }
 
 .logo {
-    width: 70px;
+    width: 60px;
 }
 
 .closeBtn i {
@@ -54,13 +104,5 @@ a {
 
 .closeBtn i:hover {
     color: $blush;
+    cursor: pointer;
 }
-
-
-// .navRight {
-//     display: flex;
-
-//     li {
-//         padding-left: 30px;
-//     }
-// }
