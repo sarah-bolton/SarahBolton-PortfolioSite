@@ -21,10 +21,16 @@
     text-align: center;
 }
 
-.live:hover {
-    color: $blush;
+.portfolioImg {
+    border: 1px solid $darkbeige;
 }
 
-.github:hover {
-    color: $blush;
+.portfolioBtn a {
+    color: white;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 100px;
 }

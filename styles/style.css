@@ -538,16 +538,40 @@ footer .mainNav li {
   margin: 0;
 }
 
+@media (max-width: 1050px) {
+  .aboutContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 610px) {
+  .aboutSection .about1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 0vh;
+  }
+}
 .headerTitle {
   margin-bottom: 0;
   font-size: 45px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .headerSubTitle {
-  margin-top: 10px;
+  margin: 10px 0 10px;
   font-size: 20px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .titleContainer {
@@ -558,12 +582,11 @@ footer .mainNav li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 105px;
+  text-align: center;
+  margin-top: 4%;
   -webkit-animation: slide-down 2s forwards;
           animation: slide-down 2s forwards;
+  width: 100%;
 }
 
 @-webkit-keyframes slide-down {
@@ -626,8 +649,8 @@ footer .mainNav li {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: right;
-  width: 40%;
-  height: 50%;
+  width: 400px;
+  height: 400px;
   z-index: 10;
 }
 
@@ -729,7 +752,7 @@ form {
 
 .formBtn {
   width: 15%;
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -752,6 +775,10 @@ textarea {
 label {
   margin-top: 30px;
   text-transform: uppercase;
+  font-size: 14px;
+}
+
+.required {
   font-size: 14px;
 }
 
@@ -844,10 +871,20 @@ label {
   text-align: center;
 }
 
-.live:hover {
-  color: #b76760;
+.portfolioImg {
+  border: 1px solid #C4BAB1;
 }
 
-.github:hover {
-  color: #b76760;
+.portfolioBtn a {
+  color: white;
+}
+
+.btnContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 100px;
 }

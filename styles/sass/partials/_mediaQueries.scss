@@ -1,0 +1,16 @@
+@media (max-width: 1050px) {
+    .aboutContainer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 610px) {
+    .aboutSection .about1 {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 0vh;
+    }
+}

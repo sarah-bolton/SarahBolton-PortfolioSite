@@ -41,30 +41,31 @@
             <div class="formContainer">
                 <section class="formSection">
                     <h2 class="formH2">Let's Connect</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam harum ullam corrupti aut
-                        magnamnisi!
+                    <p>Please fill out your information below if you'd like to get in touch! Looking forward to hearing
+                        from you.
                     </p>
                     <form action="https://formspree.io/f/xwkzeyvv" method="POST">
                         <label>
-                            Name:
+                            Name: *
                             <br>
-                            <input type="text" name="name">
+                            <input type="text" name="name" required>
                         </label>
                         <label>
-                            Email:
+                            Email: *
                             <br>
-                            <input type="email" name="email">
+                            <input type="email" name="email" required>
                         </label>
                         <label>
-                            Subject:
+                            Subject: *
                             <br>
-                            <input type="text" name="subject">
+                            <input type="text" name="subject" required>
                         </label>
                         <label>
-                            Message:
+                            Message: *
                             <br>
-                            <textarea name="message"></textarea>
+                            <textarea name="message" required></textarea>
                         </label>
+                        <p class="required">* = Required</p>
                         <!-- your other form fields go here -->
                         <button type="submit" class="formBtn">Send</button>
                     </form>
