@@ -844,7 +844,12 @@ label {
   border: 1px solid #C4BAB1;
 }
 
-.row1Projects {
+.portfolioPg {
+  background-color: #e0e1e3;
+}
+
+.row1Projects,
+.row2Projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -855,9 +860,14 @@ label {
 }
 
 .projectContainer1,
-.projectContainer2 {
+.projectContainer2,
+.projectContainer3,
+.projectContainer4 {
+  background-color: white;
   width: 50%;
-  padding: 0 40px 0;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 10px;
 }
 
 .portfolioH1 {
@@ -886,5 +896,5 @@ label {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 0 100px;
+  margin: 0 90px;
 }
