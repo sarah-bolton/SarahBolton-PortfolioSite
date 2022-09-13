@@ -1,16 +1,87 @@
 @media (max-width: 1050px) {
     .aboutContainer {
+        display: flex;
         flex-direction: column;
+    }
+
+    .aboutSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutSection .aboutH1 {
+        position: relative;
+        top: 90px;
+        left: 0;
+    }
+
+    .aboutSection .aboutContent {
+        width: 100%;
+    }
+
+    .skillLists {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row1Projects,
+    .row2Projects {
+        display: flex;
+        flex-direction: column;
+
+        .projectContainer1,
+        .projectContainer2,
+        .projectContainer3,
+        .projectContainer4 {
+            width: 100%;
+            align-content: center;
+            display: flex;
+            flex-direction: column;
+
+            .btnContainer {
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100px;
+
+                button {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .wrapper .formSection {
+        width: 90%;
+    }
+
+    .formSection form {
+        height: 100%;
     }
 }
 
 @media (max-width: 610px) {
-    .aboutSection .about1 {
+
+    .aboutContainer {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+    }
+
+    .aboutContainer .aboutMe1 {
         position: relative;
         top: 0;
         left: 0;
-        height: 0vh;
+        height: 100%;
+        width: 100%;
     }
+
+    .aboutContainer .aboutMe2 {
+        margin: 20px auto;
+        position: relative;
+        right: 0;
+    }
+
 }

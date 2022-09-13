@@ -540,24 +540,130 @@ footer .mainNav li {
 
 @media (max-width: 1050px) {
   .aboutContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-}
-@media (max-width: 610px) {
-  .aboutSection .about1 {
+  .aboutSection {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutSection .aboutH1 {
+    position: relative;
+    top: 90px;
+    left: 0;
+  }
+  .aboutSection .aboutContent {
+    width: 100%;
+  }
+  .skillLists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .row1Projects,
+.row2Projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .row1Projects .projectContainer1,
+.row1Projects .projectContainer2,
+.row1Projects .projectContainer3,
+.row1Projects .projectContainer4,
+.row2Projects .projectContainer1,
+.row2Projects .projectContainer2,
+.row2Projects .projectContainer3,
+.row2Projects .projectContainer4 {
+    width: 100%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .row1Projects .projectContainer1 .btnContainer,
+.row1Projects .projectContainer2 .btnContainer,
+.row1Projects .projectContainer3 .btnContainer,
+.row1Projects .projectContainer4 .btnContainer,
+.row2Projects .projectContainer1 .btnContainer,
+.row2Projects .projectContainer2 .btnContainer,
+.row2Projects .projectContainer3 .btnContainer,
+.row2Projects .projectContainer4 .btnContainer {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100px;
+  }
+  .row1Projects .projectContainer1 .btnContainer button,
+.row1Projects .projectContainer2 .btnContainer button,
+.row1Projects .projectContainer3 .btnContainer button,
+.row1Projects .projectContainer4 .btnContainer button,
+.row2Projects .projectContainer1 .btnContainer button,
+.row2Projects .projectContainer2 .btnContainer button,
+.row2Projects .projectContainer3 .btnContainer button,
+.row2Projects .projectContainer4 .btnContainer button {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 900px) {
+  .wrapper .formSection {
+    width: 90%;
+  }
+  .formSection form {
+    height: 100%;
+  }
+}
+@media (max-width: 610px) {
+  .aboutContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutContainer .aboutMe1 {
     position: relative;
     top: 0;
     left: 0;
-    height: 0vh;
+    height: 100%;
+    width: 100%;
+  }
+  .aboutContainer .aboutMe2 {
+    margin: 20px auto;
+    position: relative;
+    right: 0;
   }
 }
 .headerTitle {
@@ -716,7 +822,7 @@ footer .mainNav li {
 
 .formSection {
   height: 100vh;
-  width: 50%;
+  width: 60%;
   -webkit-animation: slide-down 1s forwards;
           animation: slide-down 1s forwards;
 }
@@ -748,10 +854,11 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .formBtn {
-  width: 15%;
+  width: 100px;
   margin-top: 10px;
   text-align: center;
 }
@@ -805,6 +912,7 @@ label {
 
 .aboutMeP {
   margin-top: 115px;
+  margin-left: 30px;
 }
 
 .skillLists {
